@@ -1,0 +1,174 @@
+.main_container {
+  display: flex;
+  justify-content: first;
+  width: 100vw;
+  height: 100vh;
+}
+
+.left_container {
+  width: 25vw;
+  height: 81vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 56px;
+}
+
+.content {
+  overflow-y: auto;
+  position: relative;
+  top: 20px;
+  text-align: center;
+}
+
+.content::-webkit-scrollbar {
+  width: 12px;
+  height: 15px;
+}
+
+.content::-webkit-scrollbar-track {
+  background: #D9D9D9;
+  border-radius: 20px;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 20px;
+ height: 5px;   
+}
+
+.content ul {
+  font-family: Roboto;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 2%;
+
+  
+}
+
+.content li{
+    margin-top: 30px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 25px;
+    margin-left: 30px;
+    cursor: pointer;
+    overflow-wrap:anywhere;
+    padding: 10px;
+   
+}
+
+.content span{
+  
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; 
+    font-size: 1.3rem;
+    color: #ffffff;
+}
+
+.main_header {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 2%;
+  text-align: center;
+  position: sticky;
+  font-family: Roboto;
+  cursor: pointer;
+}
+
+.add_btn {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  margin: 30px;
+}
+
+.add_btn button {
+  width: 73px;
+  height: 73px;
+  border-radius: 50%;
+  background-color: #16008b;
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  position: sticky;
+  cursor: pointer;
+}
+
+.add_btn button:hover{
+  background-color: #625e9a;
+}
+
+.right_container {
+  width: 75%;
+  background-color: #dae5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.right_container img {
+  width: 35vw;
+  height: 38vh;
+}
+.right_container h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: Roboto;
+  padding-bottom: 10px;
+}
+
+.right_container p {
+  font-size: 1.2rem;
+  letter-spacing: 2%;
+  line-height: 22px;
+  font-family: Roboto;
+}
+
+.footer {
+  position: relative;
+  top: 130px;
+}
+.footer img {
+  width: 20px;
+  height: 20px;
+  padding-right: 5px;
+}
+
+
+.selected{
+  background-color: #2F2F2F2B;
+  border-radius: 10px;
+}
+
+.display{
+  display: none;
+}
+
+
+
+@media (max-width: 768px){
+  .main_container{
+    flex-direction: column;
+    height: auto;
+
+  }
+  .left_container{
+    width: 100%;
+  }
+  .right_container{
+    display: none;
+  }
+  .hide{
+    display: block;
+  }
+}

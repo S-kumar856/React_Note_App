@@ -1,6 +1,6 @@
 import React from 'react';
 import img from '../assets/image.png'
-import lock from '../assets/vector.png'
+import lock from '../assets/Vector.png'
 import style from './MainPage.module.css'
 
 function Home() {
